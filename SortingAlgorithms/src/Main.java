@@ -116,6 +116,9 @@ public class Main {
             pwMergeParallel.close();
             pwInsertionSerial.close();
             pwInsertionParallel.close();
+
+            // Chamando o script para gerar os gráficos
+            Runtime.getRuntime().exec("python3 plot.py");
         } catch (IOException e) {
             e.printStackTrace();
         }
